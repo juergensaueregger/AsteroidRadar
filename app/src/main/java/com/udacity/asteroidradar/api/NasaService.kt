@@ -27,10 +27,10 @@ private  val retrofit = Retrofit.Builder()
     .build()
 
 interface NasaService {
-    @GET("planetary/apod?api_key=8GgRy7s9TPH7LV74DZA1Yxb4WTgXGguCl7w8GK50")
+    @GET("planetary/apod?api_key=DEMO_KEY")
     suspend fun  getPicture(): PictureOfDay
 
-    @GET("neo/rest/v1/feed?detailed=true&api_key=8GgRy7s9TPH7LV74DZA1Yxb4WTgXGguCl7w8GK50")
+    @GET("neo/rest/v1/feed?detailed=true&api_key=DEMO_KEY")
     suspend fun getAsteroidsString(): String
 
 }
